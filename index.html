@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone Contacts</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div class="contacts-container">
+        <header class="header">
+          <h1>Contacts</h1>
+          <button class="add-contact">
+            <span>+</span>
+          </button>
+        </header>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+        <ul class="contact-list"></ul>
+      </div>
+
+      <div class="popup-add-new-contact">
+        <form class="form">
+          <p class="title">Add new contact</p>
+          <div class="wrapper">
+            <label class="label">Contact Name</label
+            ><input placeholder="Contact Name" id="name" />
+          </div>
+          <div class="wrapper">
+            <label class="label">Phone Number</label
+            ><input placeholder="+374(XX) XX XX XX" id="phone" />
+          </div>
+          <button class="button" type="submit">Add Contact</button>
+        </form>
+      </div>
+
+      <div class="popup-edit-contact">
+        <form class="form">
+          <p class="title">Edit contact</p>
+          <div class="wrapper">
+            <label class="label">Contact Name</label
+            ><input placeholder="Contact Name" id="editName" />
+          </div>
+          <div class="wrapper">
+            <label class="label">Phone Number</label
+            ><input placeholder="+374(XX) XX XX XX" id="editPhone" />
+          </div>
+          <button class="button" type="submit">Edit Contact</button>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
